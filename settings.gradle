@@ -1,8 +1,17 @@
-plugins {
-  id 'com.android.application' version '7.3.0'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
 }
-
-wrapper {
-    gradleVersion = '7.1.1' // 使用你希望使用的 Gradle 版本
-    distributionType = Wrapper.DistributionType.ALL
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
 }
+rootProject.name = "Easycontrol"
+include ':app'
