@@ -23,7 +23,7 @@ jobs:
         run: chmod +x easycontrol/gradlew
 
       - name: Build with Gradle
-        run: easycontrol/gradlew build
+        run: easycontrol/gradlew build --warning-mode all
 
       - name: Package APKs
         run: zip -r artifacts.zip app/build/outputs/**/*.apk
