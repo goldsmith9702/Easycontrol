@@ -1,1 +1,8 @@
-include ':app'
+plugins {
+  id 'com.android.application'
+}
+
+wrapper {
+    gradleVersion = '7.1.1' // 使用你希望使用的 Gradle 版本
+    distributionType = Wrapper.DistributionType.ALL
+}
