@@ -23,7 +23,7 @@ jobs:
         run: chmod +x easycontrol/gradlew
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: easycontrol/gradlew build
 
       - name: Package APKs
         run: zip -r artifacts.zip app/build/outputs/**/*.apk
