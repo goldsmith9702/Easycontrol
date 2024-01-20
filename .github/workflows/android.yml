@@ -15,6 +15,10 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
+
+      - name: List files in working directory
+        run: ls -R
+          
       - name: Grant execute permission for gradlew
         run: chmod +x gradle
 
